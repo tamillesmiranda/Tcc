@@ -10,7 +10,7 @@ window.title("Sistema")
 window.geometry("1200x900")
 window.configure(background="white")
 window.resizable(width=False,height=False)
-window.attributes("-alpha",0.7)
+window.attributes("-alpha",0.8)
 #window.iconbitmap(default="icons/LogoIcon.ico")
 
 #logo = PhotoImage(file="icons/tcc.png")
@@ -44,7 +44,11 @@ def Register():
     UserEntry.place(x=5000)
     PassLabel.place(x=5000)
     PassEntry.place(x=5000)
-    
+
+    #dados pessoais
+    DadosLabel = Label(LeftFrame,text = "Informações Pessoais", font = ("Century Gothic", 18), bg = "#000000", fg = "white")
+    DadosLabel.place(x = 450, y = 5)
+
     NameLabel = Label(LeftFrame,text = "Nome", font = ("Century Gothic", 15), bg = "#000000", fg = "white")
     NameLabel.place(x = 280, y = 40)
 
@@ -90,7 +94,7 @@ def Register():
     cityLabel = Label(LeftFrame, text = "Cidade", font = ("Century Gothic", 15), bg = "#000000", fg = "white")
     cityLabel.place(x = 270, y = 190)
 
-    cityEntry = Entry(LeftFrame, width = 20,font = ("Century Gothic", 15), bg = "#000000", fg = "white")
+    cityEntry = Entry(LeftFrame, width = 12,font = ("Century Gothic", 15), bg = "#000000", fg = "white")
     cityEntry.place(x = 350, y = 190)  
 
     ufLabel = Label(LeftFrame, text = "UF", width = 20,font = ("Century Gothic", 15), bg = "#000000", fg = "white")
@@ -98,6 +102,22 @@ def Register():
 
     ufEntry = ttk.Combobox(LeftFrame, width = 5,font = ("Century Gothic", 15), values =["AC", "AL","AP","AM","BA","CE","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO","DF"])
     ufEntry.place(x = 670, y = 190)      
+
+     #dados financeiros
+    CtLabel = Label(LeftFrame,text = "Informações Financeiras", font = ("Century Gothic", 18), bg = "#000000", fg = "white")
+    CtLabel.place(x = 450, y = 260) 
+
+    NcLabel = Label(LeftFrame,text = "N° do Cartão", font = ("Century Gothic", 15), bg = "#000000", fg = "white")
+    NcLabel.place(x = 200, y = 300)
+
+    NcEntry = Entry(LeftFrame, width = 39,font = ("Century Gothic", 15), bg = "#000000", fg = "white")
+    NcEntry.place(x = 350, y = 300)
+
+    NamecLabel = Label(LeftFrame,text = "Nome", font = ("Century Gothic", 15), bg = "#000000", fg = "white")
+    NamecLabel.place(x = 200, y = 300)
+
+    NamecEntry = Entry(LeftFrame, width = 39,font = ("Century Gothic", 15), bg = "#000000", fg = "white")
+    NamecEntry.place(x = 350, y = 300)
 
     #EmailLabel = Label(LeftFrame, text = "E-mail", font = ("Century Gothic", 15), bg = "#000000", fg = "white")
     #EmailLabel.place(x = 5, y = 100)
