@@ -13,7 +13,7 @@ window.resizable(width=False,height=False)
 window.attributes("-alpha",0.8)
 #window.iconbitmap(default="icons/LogoIcon.ico")
 
-#logo = PhotoImage(file="icons/tcc.png")
+#logo = PhotoImage(file="i/tcc.png")
 
 LeftFrame = Frame(window, width=1100, height=860, bg= "#000000", relief="raise")
 LeftFrame.pack(side=TOP)
