@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 
-#interface
+#inte
 
 window = Tk()
 window.title("Sistema")
